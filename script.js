@@ -30,10 +30,8 @@ generateBtn.addEventListener("click", writePassword);
     var length = parseInt(prompt("How long would you like your password to be?"));
 
     if (length < 8 || length > 128) {
-      alert('Invalid Input: Your password must be more than 8 charaters and less than 128 characters.');
+      alert('Invalid Input: Your password must be more than 8 charaters and less than 128 characters.') + prompt("How long would you like your password to be?");
     }
-  
-      // How do I keep the user from moving on here until a valid password length is chosen?
 
     // Confirms if user wants to include numbers
     var num = confirm("Do you want to include numbers?");
@@ -54,7 +52,7 @@ generateBtn.addEventListener("click", writePassword);
     }
 
     //  Confirms if user wants to include special characters
-    var charTypeSpec = confirm("Do you want to include speciall characters?");
+    var charTypeSpec = confirm("Do you want to include special characters?");
     if (charTypeSpec === true) {
       allPossibleChar = allPossibleChar.concat(specChar);
     }
