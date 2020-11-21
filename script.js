@@ -27,13 +27,14 @@ generateBtn.addEventListener("click", writePassword);
   
 
     // User chooses valid input password length
+    
     var passLength = parseInt(prompt("How long would you like your password to be?"));
 
     if (passLength < 8 || passLength > 128) {
-      alert('Invalid Input: Your password must be more than 8 charaters and less than 128 characters.') + prompt("How long would you like your password to be?");
+      return alert('Invalid Input: Your password must be more than 8 charaters and less than 128 characters.');
     } 
 
-
+    
     // Confirms if user wants to include numbers
     var num = confirm("Do you want to include numbers?");
     if (num === true) {
