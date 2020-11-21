@@ -58,7 +58,7 @@ generateBtn.addEventListener("click", writePassword);
       allPossibleChar = allPossibleChar.concat(specChar);
     }
   
-
+    // Creates a random number that pulls characters from the arrays requested until the password length (passLength) that was chosen is reached
     for (i = 0; i < passLength; i++) {
       var randNum = Math.floor(Math.random() * allPossibleChar.length);
      generatedPassword = generatedPassword + (allPossibleChar[randNum]);
