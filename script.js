@@ -27,11 +27,12 @@ generateBtn.addEventListener("click", writePassword);
   
 
     // User chooses valid input password length
-    var length = parseInt(prompt("How long would you like your password to be?"));
+    var passLength = parseInt(prompt("How long would you like your password to be?"));
 
-    if (length < 8 || length > 128) {
+    if (passLength < 8 || passLength > 128) {
       alert('Invalid Input: Your password must be more than 8 charaters and less than 128 characters.') + prompt("How long would you like your password to be?");
-    }
+    } 
+
 
     // Confirms if user wants to include numbers
     var num = confirm("Do you want to include numbers?");
@@ -58,7 +59,7 @@ generateBtn.addEventListener("click", writePassword);
     }
   
 
-    for (i = 0; i < length; i++) {
+    for (i = 0; i < passLength; i++) {
       var randNum = Math.floor(Math.random() * allPossibleChar.length);
      generatedPassword = generatedPassword + (allPossibleChar[randNum]);
     }
