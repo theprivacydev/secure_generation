@@ -26,10 +26,10 @@ There are no special instructions to get a copy of this project up and running o
 
 ## Deployment 
 
-Deployed Application URL: https://jaymemizelle.github.io/secure_generation/
+Deployed Application URL: https://theprivacydev.github.io/secure_generation/
 
 ## Next Steps
 Refactor CSS file to create a more intuitive UI/UX
 
  ## Author
-* Jayme Mizelle
+* The Privacy Dev
